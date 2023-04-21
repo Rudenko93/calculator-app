@@ -11,7 +11,7 @@
   --key3-background: hsl(30, 25%, 89%);
   --key3-shadow: hsl(28, 16%, 65%);
 
-  --text1: hsl(221, 14%, 31%);
+  --text1: hsl(0, 0%, 100%);
   --text2: hsl(221, 14%, 31%);
   --text-white: hsl(0, 0%, 100%);
 }
@@ -28,14 +28,14 @@
   --key3-background: hsl(268, 47%, 21%);
   --key3-shadow: hsl(290, 70%, 36%);
 
-  --text1: hsl(52, 100%, 62%);
+  --text1: hsl(221, 14%, 31%);
   --text2: hsl(52, 100%, 62%);
 }
 
 [data-theme="violet"] {
   --main-background: hsl(268, 75%, 9%);
   --keypad-background: hsl(268, 71%, 12%);
-  --screen-background: hsl(0, 0%, 93%);
+  --screen-background: hsl(268, 71%, 12%);
 
   --key1-background: hsl(185, 42%, 37%);
   --key1-shadow: hsl(185, 58%, 25%);

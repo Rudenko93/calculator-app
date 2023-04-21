@@ -1,0 +1,16 @@
+.screen-wrapper {
+  display: flex;
+  justify-content: end;
+  background-color: var(--screen-background);
+  border-radius: 0.5rem;
+  width: 100%;
+  min-width: 250px;
+  min-height: 75px;
+  margin: 2rem 0 2rem;
+
+  .screen {
+    margin: 1rem;
+    color: var(--text1);
+    font-size: 38px;
+  }
+}

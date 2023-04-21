@@ -1,15 +1,50 @@
-.WrapperSwitch {
-  width: 115px;
-  font-size: 0.85rem;
+.wrapper-switch {
+  display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  width: 115px;
+
+  span {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
 }
 
-.Switch {
-  font-size: 0.9rem;
-  flex: 0.75;
+.switch {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .numbers {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .switcher-container {
+    background-color: var(--keypad-background);
+    width: 100%;
+    min-width: 50px;
+    min-height: 20px;
+    border-radius: 2rem;
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+
+    .switcher {
+      width: 13px;
+      height: 13px;
+      min-height: 13px;
+      background-color: var(--key2-background);
+      border-radius: 2rem;
+      position: absolute;
+      //${(props) => props.theme};
+      top: 17%;
+      transition: all 0.1s linear;
+    }
+  }
 }
 
 > div:first-of-type {
@@ -19,27 +54,4 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-}
-
-.SwitcherContainer {
-  background-color: yellow;
-  width: 100%;
-  min-height: 17px;
-  border-radius: 2rem;
-  position: relative;
-  z-index: 20;
-  cursor: pointer;
-}
-
-.Switcher {
-  width: 11px;
-  height: 11px;
-  min-height: 11px;
-  background-color: red;
-  border-radius: 2rem;
-  position: absolute;
-  left: 1px;
-  //${(props) => props.theme};
-  top: 17%;
-  transition: all 0.1s linear;
 }

@@ -2,11 +2,12 @@ import { useState } from "react"
 import { Switch } from "./Switch"
 import "./App.scss"
 import { Screen } from "./Result"
+import { Keypad } from "./Keypad"
 
 type Theme = "dark" | "light" | "violet"
 
 export const App = () => {
-  const [theme, setTheme] = useState<Theme>("light")
+  const [theme, setTheme] = useState<Theme>("dark")
 
   const handleTheme = () => {
     if (theme === "dark") setTheme("light")
@@ -22,6 +23,7 @@ export const App = () => {
           <Switch theme={handleTheme} />
         </header>
         <Screen />
+        <Keypad />
       </div>
     </div>
   )

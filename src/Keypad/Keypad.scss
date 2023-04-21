@@ -1,0 +1,10 @@
+.wrapper-keypad {
+  display: grid;
+  grid-template:
+    "a a a a" minmax(50px, 1fr)
+    "b b b b" minmax(50px, 1fr)
+    "c c c c" minmax(50px, 1fr);
+  background-color: var(--keypad-background);
+  padding: 1rem;
+  gap: 1rem 0.7rem;
+}

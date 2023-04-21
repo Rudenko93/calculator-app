@@ -1,0 +1,33 @@
+.btn {
+  min-width: 50px;
+  min-height: 50px;
+  border: none;
+
+  &.default {
+    color: var(--text3);
+    background-color: var(--key3-background);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.3rem var(--key3-shadow);
+  }
+
+  &.del {
+    color: var(--text-white);
+    background-color: var(--key1-background);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.3rem var(--key1-shadow);
+  }
+
+  &.reset {
+    color: var(--text-white);
+    background-color: var(--key1-background);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.3rem var(--key1-shadow);
+  }
+
+  &.equals {
+    color: var(--text2);
+    background-color: var(--key1-background);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.3rem var(--key1-shadow);
+  }
+}

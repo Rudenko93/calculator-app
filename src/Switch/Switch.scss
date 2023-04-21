@@ -1,0 +1,45 @@
+.WrapperSwitch {
+  width: 115px;
+  font-size: 0.85rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.Switch {
+  font-size: 0.9rem;
+  flex: 0.75;
+  justify-content: center;
+  align-items: center;
+}
+
+> div:first-of-type {
+  width: 80%;
+  font-size: 0.65rem;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.SwitcherContainer {
+  background-color: yellow;
+  width: 100%;
+  min-height: 17px;
+  border-radius: 2rem;
+  position: relative;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.Switcher {
+  width: 11px;
+  height: 11px;
+  min-height: 11px;
+  background-color: red;
+  border-radius: 2rem;
+  position: absolute;
+  left: 1px;
+  //${(props) => props.theme};
+  top: 17%;
+  transition: all 0.1s linear;
+}

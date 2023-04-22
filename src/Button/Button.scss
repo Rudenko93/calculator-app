@@ -1,33 +1,48 @@
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 50px;
-  min-height: 50px;
+  min-height: 60px;
   border: none;
+  border-radius: 0.3rem;
+  padding-top: 5px;
+  &:active {
+    filter: brightness(1.2);
+  }
 
   &.default {
     color: var(--text3);
     background-color: var(--key3-background);
-    border-radius: 0.3rem;
+
     box-shadow: 0 0.3rem var(--key3-shadow);
   }
 
   &.del {
     color: var(--text-white);
     background-color: var(--key1-background);
-    border-radius: 0.3rem;
     box-shadow: 0 0.3rem var(--key1-shadow);
+    font-size: 19px;
+    text-transform: uppercase;
   }
 
-  &.reset {
+  &.res {
+    grid-column: 1/3;
     color: var(--text-white);
     background-color: var(--key1-background);
-    border-radius: 0.3rem;
     box-shadow: 0 0.3rem var(--key1-shadow);
+    font-size: 19px;
+    text-transform: uppercase;
   }
 
   &.equals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3/5;
     color: var(--text2);
-    background-color: var(--key1-background);
-    border-radius: 0.3rem;
-    box-shadow: 0 0.3rem var(--key1-shadow);
+    background-color: var(--key2-background);
+
+    box-shadow: 0 0.3rem var(--key2-shadow);
   }
 }

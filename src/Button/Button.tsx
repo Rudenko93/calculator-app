@@ -1,17 +1,17 @@
 import "./Button.scss"
 
-interface IButtonProps {
-  value: string
-  className?: "default" | "del" | "reset" | "equals"
+interface MyButtonProps {
+  span: string
+  nameClass?: "default" | "del" | "res" | "equals"
 }
 
-export const Button: React.FC<IButtonProps> = ({
-  value,
-  className = "default",
+export const Button: React.FC<MyButtonProps> = ({
+  span,
+  nameClass = "default",
 }): JSX.Element => {
   return (
-    <button className={`btn ${className}`}>
-      <span>{value}</span>
+    <button className={`btn ${nameClass}`}>
+      <span>{span}</span>
     </button>
   )
 }

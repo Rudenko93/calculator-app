@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { memo, useState } from "react"
 import "./Switch.scss"
 
 interface ISwitch {
@@ -7,7 +7,7 @@ interface ISwitch {
 
 type Switcher = "8%" | "34%" | "66%"
 
-export const Switch: React.FC<ISwitch> = ({ theme }): JSX.Element => {
+export const Switch: React.FC<ISwitch> = memo(({ theme }): JSX.Element => {
   const [switcher, setSwitcher] = useState<Switcher>("8%")
 
   const handleTheme = () => {
@@ -33,4 +33,4 @@ export const Switch: React.FC<ISwitch> = ({ theme }): JSX.Element => {
       </div>
     </div>
   )
-}
+})

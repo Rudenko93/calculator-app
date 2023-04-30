@@ -2,15 +2,31 @@ import "./Button.scss"
 
 interface MyButtonProps {
   span: string
-  nameClass?: "default" | "del" | "res" | "equals"
+  handleClick: (span: string) => string | void
 }
 
 export const Button: React.FC<MyButtonProps> = ({
   span,
-  nameClass = "default",
+  handleClick,
 }): JSX.Element => {
+  const changeClassName = () => {
+    if (span === "reset") {
+      return "res"
+    }
+    if (span === "del") {
+      return "del"
+    }
+    if (span === "=") {
+      return "equals"
+    } else {
+      return "default"
+    }
+  }
+
   return (
-    <button className={`btn ${nameClass}`}>
+    <button
+      className={`btn ${changeClassName()}`}
+      onClick={() => handleClick(span)}>
       <span>{span}</span>
     </button>
   )
